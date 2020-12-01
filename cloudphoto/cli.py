@@ -11,7 +11,7 @@ def main():
 @click.option('-a', help='album name')
 def upload(p, a):
     if (p is not None) & (a is not None):
-        upload_album(p,a)
+        upload_album(p,a.lower())
     else:
         click.echo("ERROR",color='red')
         click.echo("You need input -a TEXT && -p TEXT option's")
@@ -22,7 +22,7 @@ def upload(p, a):
 @click.option('-a', help='album name')
 def download(p, a):
     if (p is not None) & (a is not None):
-        download_album(p,a)
+        download_album(p,a.lower())
     else:
         click.echo("ERROR",color='red')
         click.echo("You need input -a TEXT && -p TEXT option's")
@@ -33,7 +33,7 @@ def download(p, a):
 def list(a):
     if a is not None:
         # выводим фотографии в альбоме
-        list_album(a)
+        list_album(a.lower())
     else:
         # выводим список альбомов
         list_albums()

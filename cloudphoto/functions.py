@@ -64,7 +64,7 @@ def upload_album(path, album_name):
             for file in files_list:
                 print(file.rsplit('.',1))
                 object_name = file.rsplit('.',1)[0] + '_' + album_name + '.' + file.rsplit('.',1)[1]
-                objects_list.append(object_name)
+                objects_list.append(object_name.lower())
 
             db = init_db()
             print(db)
