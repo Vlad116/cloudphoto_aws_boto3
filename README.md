@@ -2,19 +2,19 @@
 
 ### Application commands 
 
-- Upload photos to cloud storage: cloudphoto upload -p path -a album
+* Upload photos to cloud storage: cloudphoto upload -p path -a album
 
 Sends all photos (without recursion) from the path directory to the cloud storage and binds them to the album album. If the album does not exist, it creates a new album. If the directory does not exist, then it gives a corresponding error.
 
-- Download photos to computer: cloudphoto download -p path -a album
+* Download photos to computer: cloudphoto download -p path -a album
 
 Downloads from cloud storage all photos to path that are related to album. If the album or catalog does not exist, then it gives a corresponding error.
 
-- View album list: cloudphoto list
+* View album list: cloudphoto list
 
 Lists the albums that are present in the cloud storage.
 
-- View a list of photos in an album: cloudphoto list -a album
+* View a list of photos in an album: cloudphoto list -a album
 
 Lists photos that belong to the album album.
 
@@ -47,13 +47,14 @@ in Windows:
 
 in AWS cli:
 
-aws configure 
+* aws configure 
 
-- if the bucket was not created initially:
+if the bucket was not created initially:
 
-aws s3api create-bucket --bucket bucket_name --region region
+* aws s3api create-bucket --bucket bucket_name --region region
 
-- in the project directory:
-python setup.py develop
+in the project directory:
+
+* python setup.py develop
 
 Run commands as in  "Application commands" readme section.
