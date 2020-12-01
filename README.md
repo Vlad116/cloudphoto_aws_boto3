@@ -40,12 +40,12 @@ AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_DEFAULT_REGION, AWS_BUCKET_NAME
 
 in Windows:
 
-C:\> setx AWS_ACCESS_KEY_ID ACCES_KEY_ID
-C:\> setx AWS_SECRET_ACCESS_KEY SECRET
-C:\> setx AWS_DEFAULT_REGION eu-north-1
-C:\> setx AWS_BUCKET_NAME bucket_name (if the bucket was created)
+* C:\> setx AWS_ACCESS_KEY_ID ACCES_KEY_ID
+* C:\> setx AWS_SECRET_ACCESS_KEY SECRET
+* C:\> setx AWS_DEFAULT_REGION eu-north-1
+* C:\> setx AWS_BUCKET_NAME bucket_name (if the bucket was created)
 
-in aws cli:
+in AWS cli:
 
 aws configure 
 
