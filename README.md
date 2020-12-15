@@ -42,8 +42,12 @@ And if you want to go back to the real world, use the following command:
 $ deactivate
 ```
 
-- Set environment variables in the console open as administrator
-AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_DEFAULT_REGION, AWS_BUCKET_NAME
+Set environment variables in the console open as administrator
+- AWS_ACCESS_KEY_ID
+- AWS_SECRET_ACCESS_KEY
+- AWS_DEFAULT_REGION
+- AWS_SOURCE_BUCKET_NAME
+- AWS_TARGET_BUCKET_NAME
 
 in Windows:
 ```
